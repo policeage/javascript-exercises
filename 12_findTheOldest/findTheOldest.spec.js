@@ -44,19 +44,18 @@ describe('findTheOldest', () => {
     const people = [
       {
         name: "Carly",
-        yearOfBirth: 1066,
+        yearOfBirth: 2018,
       },
       {
         name: "Ray",
-        yearOfBirth: 1962,
-        yearOfDeath: 2011,
+        yearOfBirth: 2000,
       },
       {
         name: "Jane",
         yearOfBirth: 1912,
-        yearOfDeath: 1941,
+        yearOfDeath: 1995,
       },
     ]
-    expect(findTheOldest(people).name).toBe('Carly');
+    expect(findTheOldest(people).name).toBe('Ray');
   });
 });
